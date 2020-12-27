@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -33,7 +35,7 @@
         <button class="header__details-notification" type="button">
         </button>
         <button class="header__details-avatar" type="button">
-          <img class="header__details-avatar-img" src="/images/avatar.jpg" alt="Avatar img" width="32" height="32">
+          <img class="header__details-avatar-img" src="/images/avatar.jpg" alt="Avatar img" width="24" height="24">
         </button>
       </div>
     </div>
@@ -42,8 +44,151 @@
   <!-- main contant -->
   <main class="main">
 
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="nav__top">
+          <ul class="nav__top-list">
+            <li class="nav__top-list-item ">
+              <a href="#" class="nav__top-list-link nav__top-list-link--home">
+                <svg class="nav__top-list-img" width="20" height="17" viewBox="0 0 20 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 17V11H12V17H17V9H20L10 0L0 9H3V17" fill="#606060" />
+                </svg>
+                Home
+              </a>
+            </li>
+            <li class="nav__top-list-item ">
+              <a href="#" class="nav__top-list-link nav__top-list-link--home">
+                <svg class="nav__top-list-img" width="20" height="18" viewBox="0 0 14 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.53 8.2c-.23-.3-.5-.56-.76-.82-.65-.6-1.4-1.03-2.03-1.66C8.28 4.26 7.96 1.85 8.89 0c-.9.23-1.75.75-2.45 1.32C3.9 3.4 2.9 7.07 4.1 10.22c.04.1.08.2.08.33 0 .22-.15.42-.35.5-.22.1-.46.04-.64-.12a.83.83 0 01-.15-.17c-1.1-1.43-1.28-3.48-.53-5.12C.87 7 0 9.3.12 11.47c.04.5.1 1 .27 1.5.14.6.4 1.2.72 1.73 1.04 1.73 2.87 2.97 4.84 3.22 2.1.27 4.35-.12 5.96-1.6 1.8-1.66 2.45-4.3 1.5-6.6l-.13-.26c-.2-.45-.47-.87-.78-1.25l.03-.01zm-3.1 6.3c-.28.24-.73.5-1.08.6-1.1.38-2.2-.16-2.88-.82 1.2-.28 1.9-1.16 2.1-2.05.17-.8-.14-1.46-.27-2.23-.12-.74-.1-1.37.2-2.06.15.38.35.76.58 1.06.76 1 1.95 1.44 2.2 2.8.04.14.06.28.06.43.03.82-.32 1.72-.92 2.26l.01.01z"
+                    fill="#606060" />
+                </svg>
+                Trending
+              </a>
+            </li>
+            <li class="nav__top-list-item ">
+              <a href="#" class="nav__top-list-link nav__top-list-link--home">
+                <svg class="nav__top-list-img" width="20" height="18" viewBox="0 0 18 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.7002 5.69995H2.3002V3.99995H15.7002V5.69995ZM14.0002 0.699951H4.0002V2.29995H14.0002V0.699951ZM17.3002 8.99995V15.7C17.3002 16.7 16.6002 17.2999 15.7002 17.2999H2.3002C1.3002 17.2999 0.700195 16.6 0.700195 15.7V8.99995C0.700195 7.99995 1.4002 7.29995 2.3002 7.29995H15.7002C16.7002 7.29995 17.3002 8.09995 17.3002 8.99995ZM12.3002 12.3L7.3002 9.59995V15L12.3002 12.3Z"
+                    fill="#606060" />
+                </svg>
+                Subscriptions
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__bottom">
+          <ul class="nav__bottom-list">
+            <li class="nav__bottom-list-item">
+              <a href="#" class="nav__bottom-list-link nav__bottom-list-link--home">
+                <svg class="nav__bottom-list-img" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM12 14.5V5.5L18 10L12 14.5Z"
+                    fill="#606060" />
+                </svg>
+                Library
+              </a>
+            </li>
+            <li class="nav__bottom-list-item ">
+              <a href="#" class="nav__bottom-list-link nav__bottom-list-link--home">
+                <svg class="nav__bottom-list-img" width="20" height="17" viewBox="0 0 20 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.396 0C6.67358 0 2.85418 3.81212 2.85418 8.5H0L3.70524 12.1782L3.74676 12.3121L7.58692 8.5H4.7535C4.7535 4.85273 7.73223 1.88545 11.4167 1.88545C15.0908 1.88545 18.0592 4.85273 18.0592 8.5C18.0592 12.1473 15.0908 15.1145 11.4167 15.1145C9.56928 15.1145 7.90867 14.3624 6.70472 13.157L5.35547 14.4964C6.9123 16.0418 9.03996 17 11.4063 17C16.1598 17 20 13.1879 20 8.5C20 3.80182 16.1598 0 11.4271 0H11.396ZM10.4619 4.71879V9.45818L14.5304 11.8279L15.2154 10.6945L11.8941 8.73697V4.71879H10.4619Z"
+                    fill="#606060" />
+                </svg>
+                History
+              </a>
+            </li>
+            <li class="nav__bottom-list-item ">
+              <a href="#" class="nav__bottom-list-link nav__bottom-list-link--home">
+                <svg class="nav__bottom-list-img" width="20" height="18" viewBox="0 0 18 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.4001 2.5999V15.3999H2.60014V2.5999H15.4001ZM15.4001 0.799899H2.60014C2.12275 0.799899 1.66492 0.989541 1.32735 1.32711C0.989786 1.66467 0.800143 2.12251 0.800143 2.5999V15.3999C0.78653 15.6446 0.823013 15.8894 0.907356 16.1195C0.991699 16.3495 1.12213 16.56 1.29065 16.7378C1.45917 16.9157 1.66224 17.0573 1.88741 17.154C2.11258 17.2506 2.35511 17.3003 2.60014 17.2999H15.4001C15.6535 17.3144 15.907 17.2752 16.1441 17.1849C16.3812 17.0945 16.5965 16.955 16.7759 16.7756C16.9553 16.5962 17.0947 16.3809 17.1851 16.1438C17.2754 15.9067 17.3147 15.6532 17.3001 15.3999V2.5999C17.3005 2.35486 17.2509 2.11233 17.1542 1.88716C17.0576 1.66199 16.916 1.45893 16.7381 1.2904C16.5602 1.12188 16.3498 0.991455 16.1197 0.907112C15.8897 0.822769 15.6448 0.786286 15.4001 0.799899Z"
+                    fill="#606060" />
+                  <path d="M7.2002 6V12.5L12.2002 9.3L7.2002 6.1V6Z" fill="#606060" />
+                </svg>
+                Your videos
+              </a>
+            </li>
+            <li class="nav__bottom-list-item ">
+              <a href="#" class="nav__bottom-list-link nav__bottom-list-link--home">
+                <svg class="nav__bottom-list-img" width="20" height="18" viewBox="0 0 18 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.99992 0.669922C4.41992 0.669922 0.669922 4.41992 0.669922 8.99992C0.669922 13.5799 4.41992 17.3299 8.99992 17.3299C13.5799 17.3299 17.3299 13.5799 17.3299 8.99992C17.3299 4.41992 13.5799 0.669922 8.99992 0.669922ZM12.4999 12.4999L8.16992 9.82992V4.82992H9.41992V9.16992L13.1699 11.4199L12.4999 12.4999Z"
+                    fill="#606060" />
+                </svg>
+                Watch later
+              </a>
+            </li>
+            <li class="nav__bottom-list-item ">
+              <a href="#" class="nav__bottom-list-link nav__bottom-list-link--home">
+                <svg class="nav__bottom-list-img" width="20" height="16" viewBox="0 0 18 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.75 15.75H3.75V6.75H0.75V15.75ZM17.25 7.5C17.25 6.67 16.57 6 15.75 6H11.02L11.72 2.57L11.75 2.33C11.75 2.03 11.62 1.73 11.42 1.53L10.62 0.75L5.7 5.7C5.4 5.96 5.25 6.34 5.25 6.75V14.25C5.25 15.07 5.92 15.75 6.75 15.75H13.5C14.12 15.75 14.65 15.37 14.88 14.85L17.15 9.55C17.21 9.37 17.25 9.19 17.25 9V7.5Z"
+                    fill="#606060" />
+                </svg>
+                Liked videos
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="subscriptions">
+        <h2 class="subscriptions__title">SUBSCRIPTION</h2>
+        <ul class="subscriptions__list">
+          <li class="subscriptions__item">
+            <a href="#" class="subscriptions__link">
+              <img class="subscriptions__link-img" src="./images/avatar.jpg" alt="Avatar youtubers" width="24"
+                height="24">
+              <span class="subscriptions__link-text">Oktay Candan</span>
+            </a>
+          </li>
+          <li class="subscriptions__item">
+            <a href="#" class="subscriptions__link">
+              <img class="subscriptions__link-img" src="./images/avatar.jpg" alt="Avatar youtubers" width="24"
+                height="24">
+              <span class="subscriptions__link-text">Oktay Candan</span>
+            </a>
+          </li>
+          <li class="subscriptions__item">
+            <a href="#" class="subscriptions__link">
+              <img class="subscriptions__link-img" src="./images/avatar.jpg" alt="Avatar youtubers" width="24"
+                height="24">
+              <span class="subscriptions__link-text">Oktay Candan</span>
+            </a>
+          </li>
+          <li class="subscriptions__item">
+            <a href="#" class="subscriptions__link">
+              <img class="subscriptions__link-img" src="./images/avatar.jpg" alt="Avatar youtubers" width="24"
+                height="24">
+              <span class="subscriptions__link-text">Oktay Candan</span>
+            </a>
+          </li>
+          <li class="subscriptions__item">
+            <a href="#" class="subscriptions__link subscriptions__link--add">
+              <img class="subscriptions__link-img" src="./images/browse.svg" alt="Avatar youtubers" width="24"
+                height="24">
+              <span class="subscriptions__link-text">Browse channels</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <footer class="footer">
+        <p class="footer__text">© 2020 cloned by bdevpro</p>
+      </footer>
+    </aside>
+    <div class="videos">
 
-
+    </div>
   </main>
 
   <!-- footer section -->
@@ -54,7 +199,8 @@
     // set megin top on tablet and mobile mode
     document.body.style.marginTop =
       document.querySelector(".header").offsetHeight + "px";
-
+    document.body.style.marginLeft =
+      document.querySelector(".sidebar").offsetHeight + "px";
   </script>
 </body>
 
