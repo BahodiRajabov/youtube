@@ -11,12 +11,11 @@
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .header__left {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 80px;
 }
 .header__toggler {
   display: inline-block;
@@ -38,21 +37,24 @@
   margin-right: 20px;
 }
 .header__search-form-input {
-  padding: 5px 12px;
+  outline: none;
+  padding: 10px 24px;
   width: 573px;
-  border: 1px solid #c0c0c0;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  box-shadow: inset 0px 0px 2px 0px #cccccc;
+  border: none;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  background-color: #EBEBEB;
 }
 .header__search-form-button {
+  outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 63px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border: 1px solid #cccccc;
+  border: none;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  background-color: #EBEBEB;
   border-left: none;
 }
 .header__search-form-button-img {
@@ -62,6 +64,7 @@
 .header__details {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .header__details-video {
