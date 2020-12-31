@@ -26,6 +26,7 @@
   align-items: center;
   text-decoration: none;
   padding:8px 25px;
+
   &:hover {
     background-color: #f4f4f4;
   }
@@ -37,6 +38,7 @@
 .subscriptions__link-text {
   display: inline-block;
   vertical-align: baseline;
-  font-size: 14px;
-  color: #030303;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
 }
