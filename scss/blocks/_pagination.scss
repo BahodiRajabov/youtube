@@ -1,0 +1,26 @@
+.pagination-list {
+  @include reset-list;
+  display: flex;
+  margin-right: 120px;
+}
+.pagination-list__item {
+  margin-right: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.pagination-list__item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: #000000;
+  opacity: 0.24;
+}
+.pagination-list__item-img{
+  display: block;
+}

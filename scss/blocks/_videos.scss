@@ -1,0 +1,5 @@
+.videos{
+  @include reset-list;
+  display: flex;
+  overflow-x: hidden;
+}

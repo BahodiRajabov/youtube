@@ -186,31 +186,106 @@
         <p class="footer__text">© 2020 cloned by bdevpro</p>
       </footer>
     </aside>
-    <div class="videos">
-      <ul class="videos__list">
-        <li class="videos__list-item video">
-          <div class="video__img-wrapper">
-            <img class="video__img" src="https://picsum.photos/300/180" alt="Rasm " width="300" height="180">
-            <span class="video__time">45:12</span>
-          </div>
-          <div class="video__details">
-
-          </div>
-        </li>
-      </ul>
-    </div>
+    <section class="videos-section">
+      <div class="recomended-channel">
+        <h3 class="visually-hidden">recomended channels</h3>
+        <div class="recomended-channel__top">
+          <a class="recomended-channel__details" href="#">
+            <img class="recomended-channel__details-img" src="./images/dolli.jpg" alt="Avatar youtuber dolli" width="50"
+              height="50">
+            <p class="recomended-channel__details-name">Dollie Blair</p>
+          </a>
+          <ol class="pagination-list">
+            <li class="pagination-list__item">
+              <button type="button" class="pagination-list__item-button">
+                <img class="pagination-list__item-img" src="./images/left-arrow.svg" alt="left arrow button" width="11"
+                  height="7">
+              </button>
+            </li>
+            <li class="pagination-list__item">
+              <button type="button" class="pagination-list__item-button">
+                <img class="pagination-list__item-img" src="./images/right-arrow.svg" alt="right arrow button"
+                  width="11" height="7">
+              </button>
+            </li>
+          </ol>
+        </div>
+        <ul class=" videos">
+          <template class="template">
+            <li class="video">
+              <a href="#" class="video__link">
+                <div class="video__img-wrapper">
+                  <img class=" video__img" src="./images/video-img-1.jpg" alt=" dolli video" width="250" height="150">
+                  <p class=" video__duration">4:15</p>
+                  <button class="watch-later-button" type="button"></button>
+                </div>
+                <h3 class="video__title">A Brief History Of Creation</h3>
+                <div class="video__details">
+                  <div class="video__left">
+                    <p class="video__views"><span class="video__views-count">80k</span>views</p>
+                    <p class="video__time">3 days ago</p>
+                  </div>
+                  <a href="#" class="video__creater">Dollie Blair</a>
+                </div>
+              </a>
+            </li>
+          </template>
+        </ul>
+      </div>
+      <div class="recomended-videos">
+        <h3 class="recomended-videos__title">Recommended</h3>
+        <ul class="recomended-videos__list"></ul>
+        <template class="recomended-video__template">
+          <li class="recomended-video">
+            <a href="#" class="recomended-video__link">
+              <div class="recomended-video__img-wrapper">
+                <img class="recomended-video__img" src="./images/recommend-img-1.jpg" alt="recomended video" width="400"
+                  height="250">
+                <p class="recomended-video__duration">4:15</p>
+                <button class="watch-later-button" type="button" aria-label="watch later button"></button>
+              </div>
+              <h3 class="recomended-video__title">A Brief History Of Creation</h3>
+              <div class="recomended-video__details">
+                <div class="recomended-video__left">
+                  <p class="recomended-video__views"><span class="recomended-video__views-count">80k</span>views</p>
+                  <p class="recomended-video__time">3 days ago</p>
+                </div>
+                <a href="#" class="recomended-video__creater">Dollie Blair</a>
+              </div>
+            </a>
+          </li>
+        </template>
+      </div>
+      <!-- Watch later videos  -->
+      <div class="watch-later">
+        <h3>Watch later</h3>
+        <ul class="videos"></ul>
+        <template class="template">
+          <li class="video">
+            <a href="#" class="video__link">
+              <div class="video__img-wrapper">
+                <img class=" video__img" src="./images/video-img-1.jpg" alt=" dolli video" width="250" height="150">
+                <p class=" video__duration">4:15</p>
+                <button class="watch-later-button" type="button"></button>
+              </div>
+              <h3 class="video__title">A Brief History Of Creation</h3>
+              <div class="video__details">
+                <div class="video__left">
+                  <p class="video__views"><span class="video__views-count">80k</span>views</p>
+                  <p class="video__time">3 days ago</p>
+                </div>
+                <a href="#" class="video__creater">Dollie Blair</a>
+              </div>
+            </a>
+          </li>
+        </template>
+      </div>
+    </section>
   </main>
 
   <!-- footer section -->
   <footer class="footer"></footer>
-  <script>
-    var header = document.querySelector(".header");
-
-    // set megin top on tablet and mobile mode
-    document.body.style.marginTop =
-      document.querySelector(".header").offsetHeight + "px";
-    document.body.style.marginLeft =
-      document.querySelector(".sidebar").offsetHeight + "px";
+  <script src="./main.js">
   </script>
 </body>
 

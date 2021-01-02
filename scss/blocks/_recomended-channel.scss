@@ -1,0 +1,28 @@
+.recomended-channel {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.recomended-channel__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.recomended-channel__details {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.recomended-channel__details-img {
+  display: block;
+  margin-right: 20px;
+}
+.recomended-channel__details-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202C;
+
+}
