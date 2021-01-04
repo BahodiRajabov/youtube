@@ -143,7 +143,7 @@ let updateWatchLater = () => {
 
 let addWatchLater = (array,clicked)=> {
   clicked.addEventListener("click",(e)=>{
-    if (e.target.matches("button")) {
+    if (e.target.matches(".watch-later-button")) {
       array.forEach((video)=>{
         if (video.id === e.target.dataset.id) {
           console.log(e.target.dataset.id);
